@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: #56e7fd;
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    color: #2d5661;
+}
+.hero{
+    display: flex;
+    width: 300px;
+    height: 300px;
+    flex-wrap: wrap;
+    margin: 150px auto;
+    
+}
+.pqimagem{
+    flex-basis: 90px;
+    cursor: pointer;
+    position: relative;
+    transition: 2s;
+    box-shadow: 27px 41px 13px 4px rgba(0, 0, 0, 0.10);
+}
+.pqimagem img{
+    width: 100px;
+    display: block;
+}
+.pqimagem::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    bottom: -29px;
+    left: 7px;
+    background: #2d5661;
+    transform: skewX(26deg);
+}
+.pqimagem::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 100px;
+    right: -14px;
+    top: 15px;
+    background: #3c8898;
+    transform: skewY(65deg);
+}
+.hero:hover .pqimagem:nth-child(1){
+    transform: translate(60px, 230px) rotate(360deg);
+}
+.hero:hover .pqimagem:nth-child(2){
+    transform: translate(-260px, -150px) rotate(360deg);
+}
+.hero:hover .pqimagem:nth-child(3){
+    transform: translate(440px, -220px) rotate(360deg);
+}
+.hero:hover .pqimagem:nth-child(4){
+    transform: translate(-260px, 295px) rotate(360deg);
+}
+.hero:hover .pqimagem:nth-child(5){
+    transform: translate(100px, -120px) rotate(360deg);
+}
+.hero:hover .pqimagem:nth-child(6){
+    transform: translate(-370px, -150px) rotate(360deg);
+}
+.hero:hover .pqimagem:nth-child(7){
+    transform: translate(-280px, -40px) rotate(360deg);
+}
+.hero:hover .pqimagem:nth-child(8){
+    transform: translate(0px, -480px) rotate(360deg);
+}
+.hero:hover .pqimagem:nth-child(9){
+    transform: translate(400px, -120px) rotate(360deg);
+}
